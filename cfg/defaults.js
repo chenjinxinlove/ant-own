@@ -30,6 +30,10 @@ function getDefaultModules() {
       },{
         test: /\.scss$/,
         loader: 'style-loader!css-loader!postcss-loader!sass-loader?outputStyle=expanded'
+      },
+      {
+        test: /\.less$/,
+        loader: 'style-loader!css-loader!postcss-loader!less-loader?outputStyle=expanded'
       },{
         test: /\.sass$/,
         loader: 'style-loader!css-loader!postcss-loader!sass-loader?outputStyle=expanded&indentedSyntax'

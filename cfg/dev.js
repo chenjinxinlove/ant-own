@@ -29,7 +29,7 @@ let config = Object.assign({}, baseConfig, {
 });
 
 config.module.loaders.push({
-  test: /\.(js|jsx)$/,
+  test: /\.(tsx|jsx|js)$/,
   loader: 'react-hot!babel-loader',
   include: [].concat(
     config.additionalPaths,
